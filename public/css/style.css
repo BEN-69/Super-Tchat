@@ -1,0 +1,63 @@
+body {
+    padding-top: 10px;
+}
+
+/**
+ * -------------------------
+ * Structure
+ * -------------------------
+ */
+#tchat strong {
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+
+
+.messaging {
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width:87%;
+}
+
+.zone_message {
+    background: rgba(223, 229, 121, 0.9);
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+.message-text {
+    margin-top: 10px;
+}
+
+.message-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    display: inline-block;
+}
+
+.message-name {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#zone_notification li.login{
+    background: green;
+}
+
+#zone_notification li.logout{
+
+    background: #e62932;
+
+}
+
+#zone_notification li {
+    padding: 6px 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    background: yellow;
+}

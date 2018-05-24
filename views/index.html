@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Real-time Tchat app</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <title>Super Chat temps réel !</title>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">Super Chat temps réel !</h1>
+        <p class="text-center">Ceci est une une application basique de chat en temps réel avec node.js et socket.io
+        </p>
+    </div>
+</div>
+<div class="container">
+    <form action="/" method="post" id="formulaire_pseudo">
+        <h2 class="alert alert-info">Se connecter</h2>
+        <div class="form-group">
+            <input type="text" name="pseudo" id="pseudo" class="col-md-10" placeholder="Quel est votre pseudo ?"
+                   autofocus/>
+            <input type="submit" id="envoi_pseudo" class="btn btn-primary" value="Envoyer"/>
+        </div>
+    </form>
+    <ul id="zone_notification">
+
+    </ul>
+    <section id="zone_chat">
+
+    </section>
+
+    <div class="messaging">
+        <form action="/" method="post" id="formulaire_chat">
+        <div class="form-group">
+            <input type="text" name="message" id="message" class="col-md-10 col-sm-10" placeholder="Votre message..."
+                   autofocus/>
+            <input type="submit" id="envoi_message" class="btn btn-primary" value="Envoyer"/>
+        </div>
+        </form>
+    </div>
+
+
+</div>
+
+<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/tchat.js"></script>
+</body>
+</html>
